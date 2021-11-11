@@ -1,0 +1,115 @@
+*{
+    margin: 0; 
+    padding: 0;
+}
+header{
+    background-color: black;
+    height: 80px;
+    position: relative;
+}
+
+#logoPAI{
+    margin-left: 20%;
+    float: inline-start;
+}
+#logoPAI:hover{
+    -webkit-transform: none;
+   transform: none;
+}
+#navbar li{
+    position: relative;
+    float: left;
+    display: block;
+    margin-left: 5%;
+    margin-top: 2%;
+    text-transform: uppercase;
+    color: #fff;
+}
+#navbar li a:hover{
+    color: green;
+    font-size:larger;
+}
+#navbar a{
+    text-decoration: none;
+    color:#fff;
+}
+.formatacaoTitulo{
+    margin-top: 3%;
+    margin-left: 5%;
+    text-transform: uppercase;
+}
+.formatacaoTexto{
+    text-align: justify;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.barra{
+    border: solid rgb(10, 175, 12) 2px;
+    width: 8%;
+    margin-left: 2.5%;
+}
+div{
+    margin-bottom: 4%;
+}
+#devs{
+    background-color: #000;
+    color: #fff;
+    float: inline-end;
+}
+#augusto{
+    margin: 4%;
+    display: block;
+    position: relative;
+}
+#augustoTexto{
+    margin-top: 7%;
+    margin-right: 6%;
+    margin-left: 22%;
+    text-align: justify;
+    position: relative;  
+    
+}
+#augustoImagem{
+    float: inline-start;
+    position: relative;
+    -webkit-transition: -webkit-transform .5s ease;
+   transition: transform 5s ease;
+   margin-top: 2%;
+}
+img:hover{
+    -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+}
+#shynjiImagem{
+    float: inline-start;
+    position: relative;
+    left: 62%;
+    -webkit-transition: -webkit-transform .5s ease;
+   transition: transform 5s ease;
+   margin-top: 3%;
+}
+#shynjiTexto{
+    margin-top: 9%;
+    margin-right: 6%;
+    margin-left: 22%;
+    text-align: justify;
+    position: relative;
+    right: 17%;
+}
+#obs{
+    font-size:small;
+}
+#contatos{
+    background-color: #000;
+    color: #fff;
+    padding-top: 0.5%;
+    padding-bottom: 4%;
+}
+ol{
+    text-decoration: none;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    list-style-type: circle;
+}
