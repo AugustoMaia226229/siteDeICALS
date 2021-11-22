@@ -1,0 +1,238 @@
+*{
+    margin: 0; 
+    padding: 0;
+}
+
+header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.imgPAI {
+    text-align: center;
+    width: 10%;
+}
+
+#logoPAI{
+    text-align: center;
+}
+
+#logoPAI:hover, .prints:hover, #ultimoPrint:hover{
+    -webkit-transform: none;
+   transform: none;
+}
+
+nav {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    margin-right: 6%;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+}
+
+#navbar li{
+    font-size: large;
+    list-style-type: none;
+    margin-left: 5%;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#navbar li a:hover{
+    color: green;
+    font-size:larger;
+}
+
+#navbar a {
+    text-decoration: none;
+    color:#fff;
+}
+
+.formatacaoTitulo{
+    padding-top: 3%;
+    margin-left: 5%;
+    text-transform: uppercase;
+}
+
+.formatacaoTexto{
+    text-align: justify;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.barra{
+    border: solid rgb(10, 175, 12) 2px;
+    width: 8%;
+    margin-left: 2.5%;
+}
+
+div{
+    margin-bottom: 4%;
+}
+
+#devs{
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    color: #fff;
+}
+
+.dev{
+    display: flex;
+    margin: 4%;
+}
+
+.devTexto{
+    font-family: 'Road Rage', cursive;
+    width: 60%;
+    font-size: x-large;
+    margin-left: 3%;
+    margin-top: 4%;
+    margin-right: 6%;
+    text-align: justify;    
+}
+
+.devImagem {
+    margin-top: 2%;
+}
+
+.devImagem:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#obs{
+    font-size:small;
+}
+
+#contatos{
+    background-color: #000;
+    color: #fff;
+    padding-top: 0.5%;
+    padding-bottom: 4%;
+}
+
+ol{
+    text-decoration: none;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    list-style-type: circle;
+}
+
+.formatacaoTitulo2{
+    margin-top: 2%;
+    margin-left: 5%;
+    text-transform: uppercase;
+    font-size: 140%;
+}
+
+.prints{
+    margin-top:4%;
+    margin-left: 38%;
+    margin-bottom: 4%;
+}
+
+#ultimoPrint{
+    margin-top:4%;
+    margin-left: 30%;
+    margin-bottom: 4%;
+}
+
+#mainProjetos{
+    background-color: #000;
+    color: #fff
+}
+
+#video{
+    padding-left: 30%;
+    margin-top: 4%;
+}
+
+.partesPretasProjeto{
+    background-color: #000;
+    color: #fff;
+    padding-bottom: 4%;
+}
+
+.partesBrancasProjeto{
+    padding-bottom: 4%;
+}
+
+#downloads a {
+    font-weight: bold;
+    font-size: x-large;
+    color: black;
+    text-decoration: none;
+}
+
+#downloads a:hover {
+    text-decoration: underline;
+    color: green;
+}
+
+footer{
+    z-index: 999;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    display: inline-block;
+    margin-top: auto;
+    color: white;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+#socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+#socials li{
+    margin: 0 10px;
+}
+#socials a{
+    text-decoration: none;
+    color: white;
+}
+#socials a i{
+    font-size: 1.1rem;
+    transition: color .1s ease;
+
+}
+#socials a:hover i{
+    color: grey;
+}
