@@ -1,41 +1,55 @@
 *{
     margin: 0; 
     padding: 0;
+    box-sizing: border-box;
 }
-
+body{
+    /*Alto explicativo*/
+    background-color: #dbebf3;
+    height: 100vh;
+    width: 100vw;
+}
 header{
-    background-color: black;
+    /*Alto explicativo*/
+    background-color: #0f1626;
     display: flex;
     justify-content: space-between;
     height: 80px;
 }
-
 .imgPAI {
-    text-align: center;
-    width: 10%;
+    /*Alto explicativo*/
+    display: flex;
+    padding-left: 45%;
+    padding-right: 55%;
 }
-
 #logoPAI{
+    /*Alto explicativo*/
     text-align: center;
+    display: block;
 }
-
-#logoPAI:hover, .prints:hover, #ultimoPrint:hover{
+#logoPAI:hover{
+    /*Alto explicativo*/
     -webkit-transform: none;
    transform: none;
 }
-
+#barraDePesquisa{
+    /*Barra que possui os links para outras páginas*/
+    background-color: #ab987a;
+}
+/*A partir desta linha até a linha marcada como "FIM", ocorre a estilização da navbar*/
 nav {
     width: 20%;
     display: flex;
     align-items: center;
     margin-right: 6%;
+    padding-left: 33%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
-
 #navbar {
     display: flex;
     align-items: center;
 }
-
 #navbar li{
     font-size: large;
     list-style-type: none;
@@ -43,148 +57,88 @@ nav {
     text-transform: uppercase;
     color: #fff;
 }
-
 #navbar li a:hover{
-    color: green;
+    color: #000;
     font-size:larger;
 }
-
 #navbar a {
     text-decoration: none;
     color:#fff;
 }
-
-.formatacaoTitulo{
-    padding-top: 3%;
-    margin-left: 5%;
-    text-transform: uppercase;
+/*FIM*/
+.content{
+    /*Se quiser ajustar o tamanho que do slider, altere o "heigh" e o "width"*/
+    height: 400px; 
+    width: 750px;
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 30%);
+    margin-bottom: 15%;
 }
-
-.formatacaoTexto{
-    text-align: justify;
-    margin-top: 3%;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-.barra{
-    border: solid rgb(10, 175, 12) 2px;
-    width: 8%;
-    margin-left: 2.5%;
-}
-
-div{
-    margin-bottom: 4%;
-}
-
-#devs{
+.navegacao{
+    /*Estilização da barra de navegação do slide*/
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
     display: flex;
-    flex-direction: column;
-    background-color: #000;
-    color: #fff;
 }
-
-.dev{
+.bar{
+    /*Estilização dos botoes da barra de navegação do slide*/
+    width: 70px;
+    height: 17px;
+    border: 2px solid #fff;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+.bar:hover{
+    /*Alto explicativo*/
+    background-color: #fff;
+}
+input{
+    display: none;
+}
+.slides{
     display: flex;
-    margin: 4%;
+    width: 500%;
+    height: 100%;
 }
-
-.devTexto{
-    font-family: 'Road Rage', cursive;
-    width: 60%;
-    font-size: x-large;
-    margin-left: 3%;
-    margin-top: 4%;
-    margin-right: 6%;
-    text-align: justify;    
+.slide{
+    width: 20%;
+    transition: 0.6s;
 }
-
-.devImagem {
-    margin-top: 2%;
+.slide img{
+    width: 100%;
+    height: 100%;
 }
-
-.devImagem:hover {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+/*A partir desta linha vão ficar as estilizações para que haja a troca entre os slides. Essa estilização acaba na linha comentada com um "FIM"*/
+#slide1:checked ~ .primeira{
+    margin-left: 0;
 }
-
-#obs{
-    font-size:small;
+#slide2:checked ~ .primeira{
+    margin-left: -20%;
 }
-
+#slide3:checked ~ .primeira{
+    margin-left: -40%; /*A terceira imagem vai estar a menos 40% da primeira*/ 
+}
+/*FIM*/
 #contatos{
-    background-color: #000;
-    color: #fff;
-    padding-top: 0.5%;
+    /*Estilização dos contatos*/
+    margin: 15%, 15%, 5%, 15%;
     padding-bottom: 4%;
 }
-
-ol{
-    text-decoration: none;
-    margin-top: 3%;
-    margin-left: 5%;
-    margin-right: 5%;
-    list-style-type: circle;
-}
-
-.formatacaoTitulo2{
-    margin-top: 2%;
-    margin-left: 5%;
-    text-transform: uppercase;
-    font-size: 140%;
-}
-
-.prints{
-    margin-top:4%;
-    margin-left: 38%;
-    margin-bottom: 4%;
-}
-
-#ultimoPrint{
-    margin-top:4%;
-    margin-left: 30%;
-    margin-bottom: 4%;
-}
-
-#mainProjetos{
-    background-color: #000;
-    color: #fff
-}
-
-#video{
-    padding-left: 30%;
-    margin-top: 4%;
-}
-
-.partesPretasProjeto{
-    background-color: #000;
-    color: #fff;
-    padding-bottom: 4%;
-}
-
-.partesBrancasProjeto{
-    padding-bottom: 4%;
-}
-
-#downloads a {
-    font-weight: bold;
-    font-size: x-large;
-    color: black;
-    text-decoration: none;
-}
-
-#downloads a:hover {
-    text-decoration: underline;
-    color: green;
-}
-
+/*Apartir desta linha até a linha marcada como "FIM", ocorre a estilização do rodapé*/
 footer{
     z-index: 999;
     position: relative;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #000;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background: #0f1626;
     height: auto;
     width: 100vw;
     font-family: "Open Sans";
@@ -193,7 +147,6 @@ footer{
     margin-top: auto;
     color: white;
 }
-
 .footer-content{
     display: flex;
     align-items: center;
@@ -213,7 +166,6 @@ footer{
     line-height: 28px;
     font-size: 14px;
 }
-
 #socials{
     list-style: none;
     display: flex;
@@ -235,4 +187,44 @@ footer{
 }
 #socials a:hover i{
     color: grey;
+}
+/*FIM*/
+.magensGeral{
+    margin: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+ol{
+    /*Alto explicativo*/
+    text-decoration: none;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    list-style-type: circle;
+}
+.formatacaoTitulo2{
+    /*Segunda formatação para textos utilizados no site*/
+    margin-top: 2%;
+    margin-left: 5%;
+    text-transform: uppercase;
+    font-size: 140%;
+}
+.formatacaoTitulo{
+    /*Classe com formatação padrão para os títulos usados no site*/
+    padding-top: 3%;
+    margin-left: 5%;
+    text-transform: uppercase;
+}
+.formatacaoTexto{
+    /*Classe com formatação padrão para os textos usados no site*/
+    text-align: justify;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.barra{
+    /*Aqui fica a estilização das barras verdes que ficam abaixo dos títulos*/
+    border: solid #ff533d 2.5px;
+    width: 8%;
+    margin-left: 2.5%;
 }
